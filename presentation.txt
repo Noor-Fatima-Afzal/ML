@@ -1,0 +1,37 @@
+               --(ML)--
+-> subset of AI
+-> art of making machine to learn
+   from data
+-> recognize relationships
+-> draw conclusions
+-> make predictions
+-> making machine intelligent through
+   knowledge
+            --(Approaches)--
+-> supervised learning
+the algorithm learns from labeled data
+(regression)
+-> unsupervised learning
+the algorithm learns patterns and structures
+from unlabeled data without explicit
+guidance or supervision
+(clustering)
+            --(Applications)--
+-> Recommendation Systems
+-> Virtual Personal Assistants
+-> Social Media Personalization
+-> Healthcare Diagnosis
+-> Smart Home Devices
+-> Fraud Detection
+-> Language Translation
+-> Image and Object Recognition
+-> Atutomatic cars
+        --(Python Libraries)--
+-> NumPy
+-> pandas
+-> scikit-learn
+-> TensorFlow
+-> Keras
+-> PyTorch
+-> matplotlib
+-> seaborn
