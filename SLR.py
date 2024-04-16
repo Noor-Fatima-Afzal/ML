@@ -5,6 +5,8 @@ from sklearn import linear_model
 
 df=pd.read_csv("data.csv")
 
+print(df.head())
+
 reg=linear_model.LinearRegression()
 reg.fit(df[['Area']], df.Price)
 print(reg.predict([[3300]]))
