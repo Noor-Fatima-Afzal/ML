@@ -1,0 +1,23 @@
+
+   
+               --(Questions)--
+
+--> what is R^2 coefficient of determination
+--> point # 4 line no 2
+-->
+
+                --(Notes)--
+y=mx+c
+so find m and c
+m=[np.sum((x - x_mean) * (y - y_mean))  /  np.sum((x - x_mean) ** 2)]
+
+c=y_mean - (slope* x_mean)
+
+TSS=total variance in the output data
+TSS=sum((y - y_mean) ** 2)
+
+RSS=the difference between the actual and predicted values
+RSS=sum(self.residual_ ** 2)
+
+variance in the dependent variable that is predictable from the independent variable(s)
+R-Squared = 1 - (RSS / TSS)
