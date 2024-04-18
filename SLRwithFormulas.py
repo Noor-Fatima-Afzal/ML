@@ -36,7 +36,6 @@ class SimpleLinearRegression:
     
     def predict(self, x):
         return self.intercept_ + self.slope_ * x
-    
 
 data={'x':[1,2,3,4,5],'y':[0.9,2.5,3.6,3.5,4.6]}
 df=pd.DataFrame(data)
