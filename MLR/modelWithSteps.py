@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
+import numpy as np
 
 # Step 1: Data Collection
 df = pd.read_csv("ToyotaCorolla1.csv")
@@ -17,6 +18,14 @@ model = LinearRegression()
 
 # Step 4: Train the Model
 model.fit(X_train, y_train)
+
+
+def mean_squared_error(y_true, y_pred):
+    return np.mean((y_true - y_pred) ** 2)
+def r2_score(y_true, y_pred):
+    ss_res = np.sum((y_true - y_pred) ** 2)
+    ss_tot = np.sum((y_true - np.mean(y_true)) ** 2)
+    return 1 - (ss_res / ss_tot)
 
 # Step 5: Model Evaluation
 y_pred = model.predict(X_test)
