@@ -2,7 +2,6 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-
 data_dict = {
     'Doors': [3, 4, 5, 3, 2],
     'Cylinders': [4, 6, 4, 4, 6],
@@ -31,7 +30,7 @@ fig, axs = plt.subplots(5, figsize=(5,20))
 for i, feature in enumerate(['Doors', 'Cylinders', 'Gears', 'Quarterly_Tax', 'Weight']):
     axs[i].scatter(df[feature], y)
     axs[i].set_xlabel(feature)
-    axs[i].set_ylabel('Price') # y axis par hmaisha Price hogi
+    axs[i].set_ylabel('Price') # y axis par hmaisha Price hogi q k wo predict krni hai
 
 plt.tight_layout()
 plt.show()
