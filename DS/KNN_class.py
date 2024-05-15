@@ -53,5 +53,3 @@ knn.fit(X, y)
 
 x = [4, 7]
 print("The predicted label for the test sample is ",knn.predict(x))
-
-
